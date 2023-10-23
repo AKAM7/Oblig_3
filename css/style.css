@@ -1,0 +1,181 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #FFF;
+    width: 100%;
+}
+
+header {
+    max-width: 100%;
+    height: 50px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 50px;
+}
+
+header .menu {
+    position: relative;
+    width: 20px;
+    height: 8px;
+    background: none;
+    border: none;
+}
+
+header .menu::before,
+header .menu::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    border-radius: 10px;
+}
+header .menu::after {
+    top: unset;
+    bottom: 0;
+}
+
+header .icons {
+    display: flex;
+    gap: 20px;
+    height: 22px;
+}
+
+header .icon-parent {
+    height: 100%;
+    display: block; 
+}
+
+header .icon-parent .icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner img,
+.rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.rectangle {
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.banner h1 {
+    color: #FFF;
+    font-size: 50px;
+    text-align: center;
+}
+
+.banner button {
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    background: #FFF;
+    border: none;
+}
+
+.collection {
+    margin-top: 20px;
+    padding: 0 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.collection .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 30px;
+}
+
+.collection .products a {
+    text-decoration: none;
+    color: #000;
+}
+
+.collection .products .card{
+    border: 1px solid ;
+    height: min-content;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.collection .products .card img{
+    width: 100%;
+    z-index: -1;
+}
+
+.collection .products .card figcaption {
+    padding: 0 20px;
+}
+
+.collection .products .card figcaption a{
+    text-decoration: none;
+    color: #000;
+}
+
+.newsletter {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.newsletter form {
+    display: flex;
+    height: 40px;
+    width: 50%;
+    width: 100%;
+    max-width: 710px;
+}
+
+.newsletter form input {
+    padding: 0 8px;
+    border: 1px solid;
+    border-right: 0px;
+    flex: 1;
+}
+
+.newsletter form button {
+    padding: 8px 10px 8px 10px;
+    background: #000;
+    color: #FFF;
+    border: none;
+    flex: 0.25;
+}
+
+footer {
+    padding: 30px;
+}

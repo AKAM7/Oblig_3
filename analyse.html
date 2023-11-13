@@ -26,7 +26,7 @@
     </header>
     <main class="analyse">
         <section class="keyword-section">
-            <h2>Nøkkelord</h2>
+            <h1>Nøkkelord</h1>
             <p> Ved hjelp av Google Trends fant jeg noen keywords som kan være relevant for nettsiden.</p>
             <ul>
                 <li><strong>Hoka</strong>: Mange som søker "hoka" og dermed ikke skriver noe "sko" i søken. På denne
@@ -70,7 +70,7 @@
         </section>
 
         <section id="Lighthouse">
-            <h2>Resultater fra Lighthouse</h2>
+            <h3>Resultater fra Lighthouse</h3>
             <p>Resultater fra lighthouse viser nesten de samme feilene for alle sidene. Vi mangler alt-text til bildene,
                 og ikke minst har vi heller ikke meta-tag for sidene.</p>
             <figure>
@@ -109,7 +109,18 @@
                 <p>WebAIM mener at kontrasten mellom baneren og teksten gjør at teskten ikke blir lett leselig. Menyen er såklart ikke klikkbart og dermed vil vi få en error på det.</p>
             </div>
         </div>
-
+        <section id="Lighthouse">
+            <h4>Resultater fra Lighthouse</h4>
+            <p>Her er endringene etter at vi gjennomførte det vi skulle gjennomførte. Både SEO og accessibility score har gått opp.</p>
+            <figure>
+                <img src="img/lighthouse-after.png" alt="Resultater fra Lighthouse">
+                <figcaption>Resultat fra Lighthouse </figcaption>
+            </figure>
+            <p>Nå ser vi at alle errorsan er borte. Contrast erroren gjenstår, men jeg har sjekket Chrome Web dev tools, og WCAG contrast, og den skal være riktig.</p>
+            <figure>
+                <img src="img/Webaim.png" alt="Resultater fra WebAIM">
+            </figure>
+        </section>
     </main>
     <footer>
         <p>&copy; 2023 Ditt selskapsnavn. Alle rettigheter forbeholdt.</p>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="Utforsk vårt utvalg av premium sko. Finn dine perfekte sko hos oss.">
+    <title>Analyse</title>
+</head>
+
+<body>
+    <header>
+        <button class="menu"></button>
+        <a href="/">
+            <img src="./img/Logo.svg" alt="Logo" class="logo">
+        </a>
+        <div class="icons">
+            <a href="/cart" class="icon-parent">
+                <img src="./img/cart.svg" alt="Cart" class="icon">
+            </a>
+            <a href="/search" class="icon-parent">
+                <img src="./img/Search.svg" alt="Search" class="icon">
+            </a>
+        </div>
+    </header>
+    <main class="analyse">
+        <section class="keyword-section">
+            <h2>Nøkkelord</h2>
+            <p> Ved hjelp av Google Trends fant jeg noen keywords som kan være relevant for nettsiden.</p>
+            <ul>
+                <li><strong>Hoka</strong>: Mange som søker "hoka" og dermed ikke skriver noe "sko" i søken. På denne
+                    måten så kan vår nettside komme når noen søker dette opp.</li>
+                <li><strong>Herre sko</strong>: Det er flere menn enn kvinne som ville ha likt la oss si "yeezys" og
+                    dermed vil dette søkeordet påvirke litt.</li>
+                <li><strong>Adidas sko</strong>: Top søkeord</li>
+                <li><strong>Adidas sko</strong>: Top søkeord</li>
+                <li><strong>nike sko</strong>: Top søkeord</li>
+                <li><strong>Sko salg</strong>: Top søkeord</li>
+            </ul>
+            <figure>
+                <img src="img/trends.png" alt="Resultater fra Google trends">
+                <figcaption>Google Trends-resultater for Sko.</figcaption>
+            </figure>
+        </section>
+
+        <section id="WebAIM">
+            <h2>Resultater fra WebAIM</h2>
+            <p>Ikke verst, men noen ting som må fikses på.</p>
+            <figure>
+                <img src="img/webaim-overall.png" alt="Resultater fra WebAIM">
+                <figcaption>Resultat for hjemmesiden </figcaption>
+            </figure>
+            <figure>
+                <img src="img/feil-nr1.png" alt="Resultater fra WebAIM">
+                <figcaption>Feil nr.1 </figcaption>
+            </figure>
+            <figure>
+                <img src="img/feil-nr2.png" alt="Resultater fra WebAIM">
+                <figcaption>Feil nr.2 </figcaption>
+            </figure>
+            <figure>
+                <img src="img/feil-nr3.png" alt="Resultater fra WebAIM">
+                <figcaption>Feil nr.3 </figcaption>
+            </figure>
+            <figure>
+                <img src="img/produkt-feil.png" alt="Resultater fra WebAIM">
+                <figcaption>I tillegg hadde denne som måtte fikses fra produkt siden:</figcaption>
+            </figure>
+        </section>
+
+        <section id="Lighthouse">
+            <h2>Resultater fra Lighthouse</h2>
+            <p>Resultater fra lighthouse viser nesten de samme feilene for alle sidene. Vi mangler alt-text til bildene,
+                og ikke minst har vi heller ikke meta-tag for sidene.</p>
+            <figure>
+                <img src="img/Lighthouse.png" alt="Resultater fra Lighthouse">
+                <figcaption>Overall resultat for hjemmesiden </figcaption>
+            </figure>
+            <figure>
+                <img src="img/Lighthouse-omOss-Overall.png" alt="Resultater fra Lighthouse">
+                <figcaption>Overall resultat for Om-oss siden </figcaption>
+            </figure>
+            <figure>
+                <img src="img/Lighthouse-produkt-overall.png" alt="Resultater fra Lighthouse">
+                <figcaption>Overall resultat for produkt siden </figcaption>
+            </figure>
+        </section>
+
+
+        <div class="table">
+            <div class="table-row">
+                <b>ChatGPT</b>
+                <p>
+                    ChatGPT sitt test påpeker at vi må fikse følgende; Språk: Bruk riktig språkkode i
+                    lang="en" hvis innholdet er på engelsk. Endre det til det språket nettstedet ditt er ment for, for
+                    eksempel lang="no" for norsk.
+                    Tittel: Sørg for at title-elementet reflekterer innholdet og inkluderer relevante nøkkelord.
+                    Meta Beskrivelse: Inkluder en meta beskrivelse i
+                    head-seksjonen for å forbedre klikkfrekvensen fra søkeresultatene
+                </p>
+            </div>
+            <div class="table-row">
+                <b>Lighthouse</b>
+                <p>Lighthouse er så å si enig med ChatGPT og i alle testene fikk vi minus pga. meta description.</p>
+            </div>
+            <div class="table-row">
+                <b>WebAIM</b>
+                <p>WebAIM mener at kontrasten mellom baneren og teksten gjør at teskten ikke blir lett leselig. Menyen er såklart ikke klikkbart og dermed vil vi få en error på det.</p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Ditt selskapsnavn. Alle rettigheter forbeholdt.</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/aboutus.html">About us</a>
+            <a href="/analyse.html">Analyse</a>
+        </nav>
+    </footer>
+</body>
+</body>
+
+</html>

@@ -1,77 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Din nettside tittel</title>
+    <meta name="description" content="Utforsk vårt utvalg av premium sko. Finn dine perfekte sko hos oss.">
+    <title>Ditt selskaps Premium Sko Samling</title>
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
+    <a href="#main" class="skip-button">Skip to main content</a>
     <header>
-        <button class="menu"></button>
+        <button class="menu" aria-label="Hovedmeny"></button>
         <a href="/">
             <img src="./img/Logo.svg" alt="Logo" class="logo">
         </a>
         <div class="icons">
             <a href="/cart" class="icon-parent">
-                <img src="./img/cart.svg" alt="Cart" class="icon">
+                <img src="./img/cart.svg" alt="Handlekurv" class="icon">
             </a>
             <a href="/search" class="icon-parent">
-                <img src="./img/Search.svg" alt="Search" class="icon">
+                <img src="./img/Search.svg" alt="Søk" class="icon">
             </a>
         </div>
     </header>
 
-    <main>
-        <section class="banner">
+
+    <main id="main">
+        <section class="banner" aria-label="Hovedbanner">
             <h1>Walk like YE</h1>
             <button>Start Journey</button>
             <div class="rectangle"></div>
-            <img src="img/kanye-west-adidas-yeezy-office.webp" alt="Bilde Slide/Banner">
+            <img src="img/kanye-west-adidas-yeezy-office.webp" alt="Kanye West Adidas Yeezy">
         </section>
 
-        <section class="collection">
+        <section class="collection" aria-label="Favorittsamling">
             <h2>Favoritter</h2>
 
             <div class="products">
                 <a href="/product.html">
                     <figure class="card">
-                        <img src="img/product1.avif" alt="Produkt 1">
-                        <figcaption>Produkt 1</figcaption>
-                    </figure>
-                </a>
-                <a href="/product.html">
-                    <figure class="card">
-                        <img src="img/product1.avif" alt="Produkt 1">
-                        <figcaption>Produkt 1</figcaption>
-                    </figure>
-                </a>
-                <a href="/product.html">
-                    <figure class="card">
-                        <img src="img/product1.avif" alt="Produkt 1">
+                        <img src="img/product1.avif" alt="Produkt 1 detaljvisning">
                         <figcaption>Produkt 1</figcaption>
                     </figure>
                 </a>
             </div>
         </section>
 
-        <section class="newsletter">
+        <section class="newsletter" aria-label="Nyhetsbrev Påmelding">
             <h2>Nyhetsbrev</h2>
             <form>
-                <input type="email" placeholder="Din e-post">
-                <button type="submit">Abonner</button>
+                <label for="email">Din e-post:</label>
+                <input type="email" id="email" placeholder="Din e-postadresse">
+                <button type="submit" aria-label="Abonner på nyhetsbrev">Abonner</button>
             </form>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2023 Ditt selskapsnavn. Alle rettigheter forbeholdt.</p>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/aboutus.html">About us</a>
+        <nav aria-label="Fotermeny">
+            <a href="/" aria-label="Hjem">Home</a>
+            <a href="/aboutus.html" aria-label="Om oss">About us</a>
+            <a href="/analyse.html">Analyse</a>
         </nav>
     </footer>
 </body>

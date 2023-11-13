@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     background: #FFF;
     width: 100%;
@@ -85,7 +86,7 @@ header .icon-parent .icon {
 }
 
 .rectangle {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.9);
     z-index: -1;
 }
 
@@ -283,4 +284,56 @@ article {
     .product .product-image {
         width: 60%;
     }
+}
+
+.skip-button {
+    padding: 15px 10px 15px 10px;
+    background-color: #dddddd;
+    position: fixed;
+    left: -200px;
+    top: 0;
+    z-index: 100;
+}
+
+.skip-button:focus {
+    left: 0;
+}
+
+.analyse {
+    padding: 0 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.keyword-section, #WebAIM, #Lighthouse {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.keyword-section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.keyword-section figure, #WebAIM figure, #Lighthouse figure{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.table .table-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
